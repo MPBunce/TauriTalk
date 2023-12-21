@@ -1,6 +1,7 @@
 <script lang="ts">
   import { invoke } from "@tauri-apps/api/tauri"
-
+  import { Route, Router, Link } from "svelte-routing";
+  
   let name = "";
   let greetMsg = ""
 
@@ -16,4 +17,5 @@
     <button type="submit">Greet</button>
   </form>
   <p>{greetMsg}</p>
+  <link>
 </div>
